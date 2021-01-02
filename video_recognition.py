@@ -1,8 +1,6 @@
 '''
 This script is to apply trained model to detect guns in a video clip
-Author: Jizhou Yang
 '''
-
 
 import numpy as np
 import cv2
@@ -10,7 +8,7 @@ import imutils
 import datetime
 
 gun_cascade = cv2.CascadeClassifier('cascade.xml')
-camera = cv2.VideoCapture('data/gun4_2.mp4')
+camera = cv2.VideoCapture('data/input.webm')
 
 # initialize the first frame in the video stream
 firstFrame = None
